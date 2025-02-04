@@ -1,1 +1,32 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="estilo.css">  
+    <title>Masmorra do Destino</title>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Masmorra do Destino</h1>  
+        <label for="nome">Digite o nome do seu personagem:</label>  
+        <input type="text" id="nome" placeholder="Jales">  
 
+        <h2>Distribua seus atributos (10 pontos):</h2>  
+        <label for="forca">Força:</label>  
+        <input type="number" id="forca" value="0" min="0" max="10" onchange="atualizaTotal()"><br>  
+
+        <label for="defesa">Defesa:</label>  
+        <input type="number" id="defesa" value="0" min="0" max="10" onchange="atualizaTotal()"><br>  
+
+        <label for="sorte">Sorte:</label>  
+        <input type="number" id="sorte" value="0" min="0" max="10" onchange="atualizaTotal()"><br>  
+
+        <p id="total">Total de pontos: 0/10</p>  
+
+        <button onclick="comecarAventura()">Começar Aventura</button>  
+    </div>  
+
+    <script src="script.js"></script>  
+</body>  
+</html>  
